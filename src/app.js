@@ -22,7 +22,7 @@ export default {
       'pages/transition/index',
 
       'pages/checkbox/index',
-      // 'pages/datetimepicker/index',
+      'pages/datetimepicker/index',
     ],
     tabBar: {
       color: '#333',
