@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrap">
     <div v-if="title" class="title">{{ title }}</div>
     <slot />
   </div>
@@ -20,5 +20,8 @@ export default {
   font-size: 14px;
   color: rgba(69, 90, 100, 0.6);
   padding: 20px 15px 15px;
+}
+.wrap {
+  padding: 10px;
 }
 </style>

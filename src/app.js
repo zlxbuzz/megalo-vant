@@ -19,6 +19,10 @@ export default {
       'pages/icon/index',
       'pages/layout/index',
       'pages/popup/index',
+      'pages/transition/index',
+
+      'pages/checkbox/index',
+      // 'pages/datetimepicker/index',
     ],
     tabBar: {
       color: '#333',

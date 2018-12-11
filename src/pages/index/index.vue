@@ -7,6 +7,16 @@
         <van-cell title="icon 图标" is-link url="/pages/icon/index" />
         <van-cell title="layout 布局" is-link url="/pages/layout/index" />
         <van-cell title="popup 弹出" is-link url="/pages/popup/index" />
+        <van-cell
+          title="transition 动画"
+          is-link
+          url="/pages/transition/index"
+        />
+      </van-collapse-item>
+      <van-collapse-item title="表单组件" name="2">
+        <van-cell title="checkbox" is-link url="/pages/checkbox/index" />
+        <van-cell title="datetimepicker" is-link url="/pages/checkbox/index" />
+        <van-cell title="field" is-link url="/pages/checkbox/index" />
       </van-collapse-item>
     </van-collapse>
   </div>
