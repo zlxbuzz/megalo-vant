@@ -1,68 +1,32 @@
 <template>
   <div class="app">
-    <img class="img" :src="logo" @touchstart="changeStat" />
-    <hello-world :color="color"></hello-world>
-    <h1 class="txt" v-show="t % 2 == 1">click logo::{{ t }}</h1>
+    <van-collapse :value="activeNames">
+      <van-collapse-item title="有赞微商城" name="1">
+        提供多样店铺模板，快速搭建网上商城
+      </van-collapse-item>
+      <van-collapse-item title="有赞零售" name="2">
+        网店吸粉获客、会员分层营销、一机多种收款，告别经营低效和客户流失
+      </van-collapse-item>
+      <van-collapse-item title="有赞美业" name="3" disabled>
+        线上拓客，随时预约，贴心顺手的开单收银
+      </van-collapse-item>
+    </van-collapse>
   </div>
 </template>
 
 <script>
-import HelloWorld from "@/components/HelloWorld.vue";
 export default {
-  components: {
-    HelloWorld
-  },
   data() {
     return {
-      logo:
-        "https://user-images.githubusercontent.com/20720117/48262986-80e02780-e45f-11e8-8426-2872916adad9.png",
-      t: 1,
-      color: "#007d37"
+      activeNames: ['1'],
     };
   },
-  beforeCreate() {
-    console.log("Page [hello] Vue beforeCreate");
+  components: {
+    /*
+    vanCollapse,
+    vanCollapseItem,
+    */
   },
-  created() {
-    console.log("Page [hello] Vue created");
-    var appInstance = getApp();
-    console.log(appInstance.globalData); // I am global data
-  },
-  beforeMount() {
-    console.log("Page [hello] Vue beforeMount");
-  },
-  mounted() {
-    console.log("Page [hello] Vue mounted");
-  },
-  onLoad: function(options) {
-    // Do some initialize when page load.
-    console.log("Page [hello] onLoad");
-  },
-  onReady: function() {
-    // Do something when page ready.
-    console.log("Page [hello] onReady");
-  },
-  onShow: function() {
-    // Do something when page show.
-    console.log("Page [hello] onShow");
-  },
-  onHide: function() {
-    // Do something when page hide.
-    console.log("Page [hello] onHide");
-  },
-  onUnload: function() {
-    // Do something when page close.
-    console.log("Page [hello] onUnload");
-  },
-  /**
-   * for other event handlers, please check https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/page.html
-   */
-  methods: {
-    changeStat: function() {
-      this.t++;
-      this.color = "#" + Math.floor(Math.random() * 0xffffff).toString(16);
-    }
-  }
 };
 </script>
 
