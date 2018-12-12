@@ -23,6 +23,13 @@ export default {
 
       'pages/checkbox/index',
       'pages/datetimepicker/index',
+
+
+      'pages/area/index',
+      'pages/card/index',
+      'pages/submit-bar/index',
+      'pages/goods-action/index',
+
       'pages/field/index',
       'pages/radio/index',
       'pages/rate/index',
@@ -41,6 +48,7 @@ export default {
 
       'pages/actionsheet/index',
       'pages/dialog/index',
+
     ],
     tabBar: {
       color: '#333',
