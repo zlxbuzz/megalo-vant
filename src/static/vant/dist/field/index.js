@@ -1,4 +1,4 @@
-import { VantComponent } from '../common/component';
+import {VantComponent} from '../common/component';
 VantComponent({
   field: true,
   classes: ['input-class'],
@@ -29,31 +29,31 @@ VantComponent({
     placeholderStyle: String,
     adjustPosition: {
       type: Boolean,
-      value: true
+      value: true,
     },
     cursorSpacing: {
       type: Number,
-      value: 50
+      value: 50,
     },
     maxlength: {
       type: Number,
-      value: -1
+      value: -1,
     },
     type: {
       type: String,
-      value: 'text'
+      value: 'text',
     },
     border: {
       type: Boolean,
-      value: true
+      value: true,
     },
     titleWidth: {
       type: String,
-      value: '90px'
-    }
+      value: '90px',
+    },
   },
   data: {
-    showClear: false
+    showClear: false,
   },
   computed: {
     inputClass: function inputClass() {
@@ -62,9 +62,9 @@ VantComponent({
         'van-field--error': data.error,
         'van-field__textarea': data.type === 'textarea',
         'van-field__input--disabled': data.disabled,
-        ["van-field__input--" + data.inputAlign]: data.inputAlign
+        ['van-field__input--' + data.inputAlign]: data.inputAlign,
       });
-    }
+    },
   },
   beforeCreate: function beforeCreate() {
     this.focused = false;
@@ -74,73 +74,83 @@ VantComponent({
       var _this = this;
 
       var _ref = event.detail || {},
-          _ref$value = _ref.value,
-          value = _ref$value === void 0 ? '' : _ref$value;
+        _ref$value = _ref.value,
+        value = _ref$value === void 0 ? '' : _ref$value;
 
-      this.set({
-        value: value,
-        showClear: this.getShowClear(value)
-      }, function () {
-        _this.$emit('input', value);
+      this.set(
+        {
+          value: value,
+          showClear: this.getShowClear(value),
+        },
+        function() {
+          _this.$emit('input', value);
 
-        _this.$emit('change', value);
-      });
+          _this.$emit('change', value);
+        },
+      );
     },
     onFocus: function onFocus(event) {
       var _ref2 = event.detail || {},
-          _ref2$value = _ref2.value,
-          value = _ref2$value === void 0 ? '' : _ref2$value,
-          _ref2$height = _ref2.height,
-          height = _ref2$height === void 0 ? 0 : _ref2$height;
+        _ref2$value = _ref2.value,
+        value = _ref2$value === void 0 ? '' : _ref2$value,
+        _ref2$height = _ref2.height,
+        height = _ref2$height === void 0 ? 0 : _ref2$height;
 
       this.$emit('focus', {
         value: value,
-        height: height
+        height: height,
       });
       this.focused = true;
       this.set({
-        showClear: this.getShowClear()
+        showClear: this.getShowClear(),
       });
     },
     onBlur: function onBlur(event) {
       var _ref3 = event.detail || {},
-          _ref3$value = _ref3.value,
-          value = _ref3$value === void 0 ? '' : _ref3$value,
-          _ref3$cursor = _ref3.cursor,
-          cursor = _ref3$cursor === void 0 ? 0 : _ref3$cursor;
+        _ref3$value = _ref3.value,
+        value = _ref3$value === void 0 ? '' : _ref3$value,
+        _ref3$cursor = _ref3.cursor,
+        cursor = _ref3$cursor === void 0 ? 0 : _ref3$cursor;
 
       this.$emit('blur', {
         value: value,
-        cursor: cursor
+        cursor: cursor,
       });
       this.focused = false;
       this.set({
-        showClear: this.getShowClear()
+        showClear: this.getShowClear(),
       });
     },
     onClickIcon: function onClickIcon() {
-      this.$emit('click-icon');
+      //megalo
+      // this.$emit('click-icon');
+      this.$emit('clickIcon');
     },
     getShowClear: function getShowClear(value) {
       value = value === undefined ? this.data.value : value;
-      return this.data.clearable && this.focused && value && !this.data.readonly;
+      return (
+        this.data.clearable && this.focused && value && !this.data.readonly
+      );
     },
     onClear: function onClear() {
       var _this2 = this;
 
-      this.set({
-        value: '',
-        showClear: this.getShowClear('')
-      }, function () {
-        _this2.$emit('input', '');
+      this.set(
+        {
+          value: '',
+          showClear: this.getShowClear(''),
+        },
+        function() {
+          _this2.$emit('input', '');
 
-        _this2.$emit('change', '');
+          _this2.$emit('change', '');
 
-        _this2.$emit('clear', '');
-      });
+          _this2.$emit('clear', '');
+        },
+      );
     },
     onConfirm: function onConfirm() {
       this.$emit('confirm', this.data.value);
-    }
-  }
+    },
+  },
 });

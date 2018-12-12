@@ -1,0 +1,50 @@
+<template>
+  <div class="app">
+    <wrap title="基础用法">
+      <van-progress custom-class="progress" percentage="50" />
+    </wrap>
+
+    <wrap title="置灰">
+      <van-progress custom-class="progress" inactive percentage="50" />
+    </wrap>
+
+    <wrap title="样式定制">
+      <van-progress
+        custom-class="progress"
+        pivot-text="橙色"
+        color="#f2826a"
+        percentage="25"
+      />
+      <van-progress
+        custom-class="progress"
+        pivot-text="红色"
+        color="#f44"
+        percentage="50"
+      />
+      <van-progress
+        custom-class="progress"
+        percentage="75"
+        pivot-text="紫色"
+        pivot-color="#7232dd"
+        color="linear-gradient(to right, #be99ff, #7232dd)"
+      />
+    </wrap>
+    <van-toast id="van-toast" />
+  </div>
+</template>
+
+<script>
+import wrap from '@/components/wrap';
+import Toast from '@/static/vant/dist/toast/toast';
+export default {
+  components: {
+    wrap,
+  },
+};
+</script>
+
+<style lang="less">
+.progress {
+  margin: 5px 15px 20px;
+}
+</style>

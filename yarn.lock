@@ -62,7 +62,7 @@
     de-indent "^1.0.2"
     he "^1.1.0"
 
-"@megalo/template-compiler@^0.5.2":
+"@megalo/template-compiler@0.5.4":
   version "0.5.4"
   resolved "https://registry.npmjs.org/@megalo/template-compiler/-/template-compiler-0.5.4.tgz#4ae94608f64c2441adc9553fe092338e5c3bd927"
   dependencies:
@@ -3102,7 +3102,7 @@ media-typer@0.3.0:
   version "0.3.0"
   resolved "http://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
 
-megalo@^0.5.2:
+megalo@0.5.4:
   version "0.5.4"
   resolved "https://registry.npmjs.org/megalo/-/megalo-0.5.4.tgz#821d0fc77b152aed54b46615267cfab4e4fb6a52"
 
