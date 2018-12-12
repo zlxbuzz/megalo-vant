@@ -22,6 +22,12 @@
         />
         <van-cell title="field" is-link url="/pages/checkbox/index" />
       </van-collapse-item>
+      <van-collapse-item title="业务组件" name="3">
+        <van-cell title="Area 省市区选择" is-link url="/pages/area/index" />
+        <van-cell title="Card 商品卡片" is-link url="/pages/card/index" />
+        <van-cell title="SubmitBar 提交订单栏" is-link url="/pages/submit-bar/index" />
+        <van-cell title="GoodsAction 商品导航" is-link url="/pages/goods-action/index" />
+      </van-collapse-item>
     </van-collapse>
   </div>
 </template>
@@ -30,7 +36,7 @@
 export default {
   data() {
     return {
-      activeNames: ['3'],
+      activeNames: ['1'],
     };
   },
   methods: {

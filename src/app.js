@@ -23,6 +23,11 @@ export default {
 
       'pages/checkbox/index',
       'pages/datetimepicker/index',
+
+      'pages/area/index',
+      'pages/card/index',
+      'pages/submit-bar/index',
+      'pages/goods-action/index',
     ],
     tabBar: {
       color: '#333',
