@@ -24,10 +24,31 @@ export default {
       'pages/checkbox/index',
       'pages/datetimepicker/index',
 
+
       'pages/area/index',
       'pages/card/index',
       'pages/submit-bar/index',
       'pages/goods-action/index',
+
+      'pages/field/index',
+      'pages/radio/index',
+      'pages/rate/index',
+      'pages/search/index',
+      'pages/slider/index',
+      'pages/stepper/index',
+      'pages/switch/index',
+
+      'pages/collapse/index',
+      'pages/noticebar/index',
+      'pages/panel/index',
+      'pages/progress/index',
+      'pages/steps/index',
+      'pages/tag/index',
+      'pages/treeselect/index',
+
+      'pages/actionsheet/index',
+      'pages/dialog/index',
+
     ],
     tabBar: {
       color: '#333',
