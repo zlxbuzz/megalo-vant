@@ -35,7 +35,7 @@
 
 <script>
 import wrap from '@/components/wrap';
-import Toast from '@/static/vant/dist/toast/toast';
+import Toast from '@/static/vant/toast/toast';
 export default {
   methods: {
     show() {
@@ -48,8 +48,16 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
-._van-button {
+<style lang="less">
+.loading {
+  margin: 0 18px;
+}
+
+.row {
+  height: 44px;
+  margin-bottom: 15px;
+}
+.van-button {
   margin: 5px;
 }
 </style>

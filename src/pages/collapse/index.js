@@ -8,9 +8,9 @@ app.$mount();
 export default {
   config: {
     usingComponents: {
-      'van-icon': '/static/vant/dist/icon/index',
-      'van-collapse': '/static/vant/dist/collapse/index',
-      'van-collapse-item': '/static/vant/dist/collapse-item/index',
+      'van-icon': '/static/vant/icon/index',
+      'van-collapse': '/static/vant/collapse/index',
+      'van-collapse-item': '/static/vant/collapse-item/index',
     },
   },
 };

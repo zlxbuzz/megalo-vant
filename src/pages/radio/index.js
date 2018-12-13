@@ -8,10 +8,10 @@ app.$mount();
 export default {
   config: {
     usingComponents: {
-      'van-cell': '/static/vant/dist/cell/index',
-      'van-cell-group': '/static/vant/dist/cell-group/index',
-      'van-radio': '/static/vant/dist/radio/index',
-      'van-radio-group': '/static/vant/dist/radio-group/index',
+      'van-cell': '/static/vant/cell/index',
+      'van-cell-group': '/static/vant/cell-group/index',
+      'van-radio': '/static/vant/radio/index',
+      'van-radio-group': '/static/vant/radio-group/index',
     },
   },
 };

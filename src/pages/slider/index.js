@@ -8,7 +8,7 @@ app.$mount();
 export default {
   config: {
     usingComponents: {
-      'van-slider': '/static/vant/dist/slider/index',
+      'van-slider': '/static/vant/slider/index',
     },
   },
 };

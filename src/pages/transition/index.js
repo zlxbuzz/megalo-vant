@@ -8,9 +8,9 @@ app.$mount();
 export default {
   config: {
     usingComponents: {
-      'van-cell': '/static/vant/dist/cell/index',
-      'van-transition': '/static/vant/dist/transition/index',
-      'van-toast': '/static/vant/dist/toast/index',
+      'van-cell': '/static/vant/cell/index',
+      'van-transition': '/static/vant/transition/index',
+      'van-toast': '/static/vant/toast/index',
     },
   },
 };

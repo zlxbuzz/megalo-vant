@@ -8,7 +8,7 @@ app.$mount();
 export default {
   config: {
     usingComponents: {
-      'van-search': '/static/vant/dist/search/index',
+      'van-search': '/static/vant/search/index',
     },
   },
 };

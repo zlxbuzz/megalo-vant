@@ -48,7 +48,7 @@
 
 <script>
 import wrap from '@/components/wrap';
-import Dialog from '@/static/vant/dist/dialog/dialog';
+import Dialog from '@/static/vant/dialog/dialog';
 const message = '哈哈';
 export default {
   data() {

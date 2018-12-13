@@ -8,11 +8,11 @@ app.$mount();
 export default {
   config: {
     usingComponents: {
-      'van-tabs': '/static/vant/dist/tabs/index',
-      'van-tab': '/static/vant/dist/tab/index',
-      'van-col': '/static/vant/dist/col/index',
-      'van-icon': '/static/vant/dist/icon/index',
-      'van-toast': '/static/vant/dist/toast/index',
+      'van-tabs': '/static/vant/tabs/index',
+      'van-tab': '/static/vant/tab/index',
+      'van-col': '/static/vant/col/index',
+      'van-icon': '/static/vant/icon/index',
+      'van-toast': '/static/vant/toast/index',
     },
   },
 };

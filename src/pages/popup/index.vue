@@ -61,7 +61,7 @@
 
 <script>
 import wrap from '@/components/wrap';
-import Toast from '@/static/vant/dist/toast/toast';
+import Toast from '@/static/vant/toast/toast';
 export default {
   data() {
     return {
@@ -143,5 +143,8 @@ export default {
   width: 100%;
   height: 100%;
   padding: 20px;
+}
+.van-button {
+  margin: 5px;
 }
 </style>

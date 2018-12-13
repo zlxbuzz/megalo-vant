@@ -8,7 +8,7 @@ app.$mount();
 export default {
   config: {
     usingComponents: {
-      'van-rate': '/static/vant/dist/rate/index',
+      'van-rate': '/static/vant/rate/index',
     },
   },
 };

@@ -8,7 +8,7 @@ app.$mount();
 export default {
   config: {
     usingComponents: {
-      'van-notice-bar': '/static/vant/dist/notice-bar/index',
+      'van-notice-bar': '/static/vant/notice-bar/index',
     },
   },
 };

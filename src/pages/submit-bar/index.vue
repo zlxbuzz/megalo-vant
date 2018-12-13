@@ -28,33 +28,30 @@
         :tip="true"
       />
     </wrap>
-    <wrap title="高级用法">
-      <van-submit-bar
-        custom-class="root-class"
-        :price="3050"
-        button-text="提交订单"
-        @submit="onSubmit"
-      >
-        <van-tag type="primary">标签</van-tag>
-        <div slot="tip">
-          您的收货地址不支持同城送, <span>修改地址</span>
-        </div>
-      </van-submit-bar>
-    </wrap>
+    <van-submit-bar
+      custom-class="root-class"
+      :price="3050"
+      button-text="提交订单"
+      @submit="onSubmit"
+    >
+      <van-tag type="primary">标签</van-tag>
+      <div slot="tip">您的收货地址不支持同城送, <span>修改地址</span></div>
+    </van-submit-bar>
+    <van-toast id="van-toast" />
   </div>
 </template>
 <script>
 import wrap from '@/components/wrap';
-import Toast from '@/static/vant/dist/toast/toast';
+import Toast from '@/static/vant/toast/toast';
 export default {
   components: {
-    wrap
+    wrap,
   },
   methods: {
     onSubmit() {
-      Toast('点击按钮')
-    }
-  }
+      Toast('点击按钮');
+    },
+  },
 };
 </script>
 <style lang="less">
@@ -62,4 +59,3 @@ export default {
   position: static;
 }
 </style>
-

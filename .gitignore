@@ -1,6 +1,8 @@
 node_modules
 .DS_Store
-dist-wechat
 .idea
+dist
+*.swp
+*.log
 .vscode
 package-lock.json

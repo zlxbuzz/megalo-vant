@@ -14,7 +14,7 @@
 
 <script>
 import wrap from '@/components/wrap';
-import Toast from '@/static/vant/dist/toast/toast';
+import Toast from '@/static/vant/toast/toast';
 import config from './config';
 export default {
   data() {

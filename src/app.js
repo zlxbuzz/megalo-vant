@@ -13,7 +13,6 @@ export default {
     // pages 的首个页面会被编译成首页
     pages: [
       'pages/index/index',
-      'pages/my/index',
       'pages/button/index',
       'pages/cell/index',
       'pages/icon/index',
@@ -23,7 +22,6 @@ export default {
 
       'pages/checkbox/index',
       'pages/datetimepicker/index',
-
 
       'pages/area/index',
       'pages/card/index',
@@ -48,26 +46,11 @@ export default {
 
       'pages/actionsheet/index',
       'pages/dialog/index',
-
+      'pages/loading/index',
+      'pages/notify/index',
+      'pages/swipecell/index',
+      'pages/toast/index',
     ],
-    tabBar: {
-      color: '#333',
-      selectedColor: '#007d37',
-      list: [
-        {
-          pagePath: 'pages/index/index',
-          text: 'home',
-          iconPath: 'static/imgs/home.png',
-          selectedIconPath: 'static/imgs/home_on.png',
-        },
-        {
-          pagePath: 'pages/my/index',
-          text: 'my',
-          iconPath: 'static/imgs/mine.png',
-          selectedIconPath: 'static/imgs/mine_on.png',
-        },
-      ],
-    },
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',

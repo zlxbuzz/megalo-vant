@@ -65,11 +65,19 @@
         />
         <van-cell title="Toast 轻提示" is-link url="/pages/toast/index" />
       </van-collapse-item>
-      <van-collapse-item title="业务组件" name="3">
+      <van-collapse-item title="业务组件" name="5">
         <van-cell title="Area 省市区选择" is-link url="/pages/area/index" />
         <van-cell title="Card 商品卡片" is-link url="/pages/card/index" />
-        <van-cell title="SubmitBar 提交订单栏" is-link url="/pages/submit-bar/index" />
-        <van-cell title="GoodsAction 商品导航" is-link url="/pages/goods-action/index" />
+        <van-cell
+          title="SubmitBar 提交订单栏"
+          is-link
+          url="/pages/submit-bar/index"
+        />
+        <van-cell
+          title="GoodsAction 商品导航"
+          is-link
+          url="/pages/goods-action/index"
+        />
       </van-collapse-item>
     </van-collapse>
   </div>
@@ -79,9 +87,7 @@
 export default {
   data() {
     return {
-
       activeNames: [],
-
     };
   },
   methods: {

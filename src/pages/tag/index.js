@@ -8,7 +8,7 @@ app.$mount();
 export default {
   config: {
     usingComponents: {
-      'van-tag': '/static/vant/dist/tag/index',
+      'van-tag': '/static/vant/tag/index',
     },
   },
 };

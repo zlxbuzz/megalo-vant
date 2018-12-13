@@ -8,7 +8,7 @@ app.$mount();
 export default {
   config: {
     usingComponents: {
-      'van-progress': '/static/vant/dist/progress/index',
+      'van-progress': '/static/vant/progress/index',
     },
   },
 };

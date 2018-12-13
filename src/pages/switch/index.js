@@ -8,10 +8,10 @@ app.$mount();
 export default {
   config: {
     usingComponents: {
-      'van-cell': '/static/vant/dist/cell/index',
-      'van-cell-group': '/static/vant/dist/cell-group/index',
-      'van-switch': '/static/vant/dist/switch/index',
-      'van-switch-cell': '/static/vant/dist/switch-cell/index',
+      'van-cell': '/static/vant/cell/index',
+      'van-cell-group': '/static/vant/cell-group/index',
+      'van-switch': '/static/vant/switch/index',
+      'van-switch-cell': '/static/vant/switch-cell/index',
     },
   },
 };

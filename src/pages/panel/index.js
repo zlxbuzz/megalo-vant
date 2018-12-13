@@ -8,8 +8,8 @@ app.$mount();
 export default {
   config: {
     usingComponents: {
-      'van-panel': '/static/vant/dist/panel/index',
-      'van-button': '/static/vant/dist/button/index',
+      'van-panel': '/static/vant/panel/index',
+      'van-button': '/static/vant/button/index',
     },
   },
 };

@@ -8,8 +8,7 @@ app.$mount();
 export default {
   config: {
     usingComponents: {
-      'van-row': '/static/vant/row/index',
-      'van-col': '/static/vant/col/index',
+      'van-loading': '/static/vant/loading/index',
     },
   },
 };

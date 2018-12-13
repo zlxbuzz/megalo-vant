@@ -1,12 +1,12 @@
-const { pagesEntry } = require('@megalo/entry')
-const createMegaloTarget = require('@megalo/target')
-const compiler = require('@megalo/template-compiler')
-const VueLoaderPlugin = require('vue-loader/lib/plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const {pagesEntry} = require('@megalo/entry');
+const createMegaloTarget = require('@megalo/target');
+const compiler = require('@megalo/template-compiler');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const _ = require( './util' );
-const appMainFile = _.resolve('src/app.js')
+const _ = require('./util');
+const appMainFile = _.resolve('src/app.js');
 const CSS_EXT = {
   wechat: 'wxss',
   alipay: 'acss',
@@ -16,40 +16,36 @@ const CSS_EXT = {
 const px2rpxLoader = {
   loader: '@megalo/px2rpx-loader',
   options: {
-    rpxUnit: 0.5
-  }
-}
+    rpxUnit: 0.5,
+  },
+};
 
-const cssLoaders = [
-  MiniCssExtractPlugin.loader,
-  'css-loader',
-  px2rpxLoader
-]
+const cssLoaders = [MiniCssExtractPlugin.loader, 'css-loader', px2rpxLoader];
 
-function createBaseConfig( platform = 'wechat' ) {
-  const cssExt = CSS_EXT[platform]
-  
+function createBaseConfig(platform = 'wechat') {
+  const cssExt = CSS_EXT[platform];
+
   return {
-    mode: 'development',
+    mode: process.env.NODE_ENV,
 
-    target: createMegaloTarget( {
-      compiler: Object.assign( compiler, { } ),
+    target: createMegaloTarget({
+      compiler: Object.assign(compiler, {}),
       platform,
       htmlParse: {
         templateName: 'octoParse',
-        src: _.resolve(`./node_modules/octoparse/lib/platform/${platform}`)
+        src: _.resolve(`./node_modules/octoparse/lib/platform/${platform}`),
       },
-    } ),
+    }),
 
     entry: {
-      'app': appMainFile,
-      ...pagesEntry(appMainFile)
+      app: appMainFile,
+      ...pagesEntry(appMainFile),
     },
 
     output: {
-      path: _.resolve( `dist-${platform}/` ),
+      path: _.resolve(`dist-${platform}/`),
       filename: 'static/js/[name].js',
-      chunkFilename: 'static/js/[id].js'
+      chunkFilename: 'static/js/[id].js',
     },
 
     devServer: {
@@ -58,17 +54,17 @@ function createBaseConfig( platform = 'wechat' ) {
 
     optimization: {
       runtimeChunk: {
-        name: 'runtime'
+        name: 'runtime',
       },
       splitChunks: {
         cacheGroups: {
           commons: {
             test: /[\\/]node_modules[\\/]/,
             name: 'vendor',
-            chunks: 'all'
-          }
-        }
-      }
+            chunks: 'all',
+          },
+        },
+      },
     },
 
     // devtool: 'cheap-source-map',
@@ -77,8 +73,8 @@ function createBaseConfig( platform = 'wechat' ) {
     resolve: {
       extensions: ['.vue', '.js', '.json'],
       alias: {
-        'vue': 'megalo',
-        '@': _.resolve('src')
+        vue: 'megalo',
+        '@': _.resolve('src'),
       },
     },
 
@@ -90,30 +86,26 @@ function createBaseConfig( platform = 'wechat' ) {
           use: [
             {
               loader: 'vue-loader',
-              options: {}
-            }
-          ]
+              options: {},
+            },
+          ],
         },
 
         {
           test: /\.js$/,
-          use: 'babel-loader'
+          use: 'babel-loader',
         },
 
         {
           test: /\.css$/,
-          use: cssLoaders
+          use: cssLoaders,
         },
 
         {
           test: /\.less$/,
-          use: [
-            ...cssLoaders,
-            'less-loader',
-          ]
+          use: [...cssLoaders, 'less-loader'],
         },
-
-      ]
+      ],
     },
 
     plugins: [
@@ -121,19 +113,22 @@ function createBaseConfig( platform = 'wechat' ) {
       new MiniCssExtractPlugin({
         filename: `./static/css/[name].${cssExt}`,
       }),
-      new CopyWebpackPlugin([{
-        from: 'src/static', to: 'static'
-      }])
+      new CopyWebpackPlugin([
+        {
+          from: 'src/static',
+          to: 'static',
+        },
+      ]),
     ],
-    stats:{
+    stats: {
       env: true,
       colors: true,
       modules: false,
       children: false,
       chunks: false,
       entrypoints: false,
-    }
-  }
+    },
+  };
 }
 
-module.exports = createBaseConfig
+module.exports = createBaseConfig;

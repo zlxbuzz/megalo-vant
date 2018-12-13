@@ -7,9 +7,10 @@ app.$mount();
 
 export default {
   config: {
-    "usingComponents": {
-      "van-submit-bar": "/static/vant/dist/submit-bar/index",
-      "van-tag": "/static/vant/dist/tag/index"
-    }
+    usingComponents: {
+      'van-submit-bar': '/static/vant/submit-bar/index',
+      'van-tag': '/static/vant/tag/index',
+      'van-toast': '/static/vant/toast/index',
+    },
   },
 };

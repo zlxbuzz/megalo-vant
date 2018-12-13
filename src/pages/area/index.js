@@ -8,7 +8,7 @@ app.$mount();
 export default {
   config: {
     "usingComponents": {
-      "van-area": "/static/vant/dist/area/index"
+      "van-area": "/static/vant/area/index"
     }
   },
 };

@@ -8,7 +8,7 @@ app.$mount();
 export default {
   config: {
     usingComponents: {
-      'van-stepper': '/static/vant/dist/stepper/index',
+      'van-stepper': '/static/vant/stepper/index',
     },
   },
 };
