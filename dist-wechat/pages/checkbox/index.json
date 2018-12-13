@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-cell": "/static/vant/cell/index",
+    "van-checkbox": "/static/vant/checkbox/index",
+    "van-checkbox-group": "/static/vant/checkbox-group/index"
+  }
+}

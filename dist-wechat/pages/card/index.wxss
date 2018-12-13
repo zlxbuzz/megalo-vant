@@ -1,0 +1,2 @@
+@import "../../htmlparse/index.wxss";
+@import "../.././static/css/pages/card/index.wxss"

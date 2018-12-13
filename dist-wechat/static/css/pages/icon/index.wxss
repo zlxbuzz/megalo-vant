@@ -1,0 +1,30 @@
+
+.title.v-5646e35a {
+  margin: 0;
+  font-weight: 400;
+  font-size: 28rpx;
+  color: rgba(69, 90, 100, 0.6);
+  padding: 40rpx 30rpx 30rpx;
+}
+.wrap.v-5646e35a {
+  padding: 20rpx;
+}
+
+.col {
+  text-align: center;
+  height: 200rpx;
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+.icon {
+  display: block;
+  margin: 30rpx 0;
+  color: rgba(69, 90, 100, 0.8);
+}
+.text {
+  font-size: 28rpx;
+}
+.demo-tab-pane {
+  padding-top: 20rpx;
+}

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "van-tree-select": "/static/vant/tree-select/index"
+  }
+}

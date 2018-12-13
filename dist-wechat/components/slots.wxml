@@ -1,0 +1,183 @@
+
+<template name="default_0" parent="index$75c3f9a1"><van-button class="_van-button v-cbda188e" type="primary" data-cid="{{ _c || c }}" data-hid="{{ 3 + _t }}" bindtap="_pe">主要按钮</van-button><van-button class="_van-button v-cbda188e" type="danger" data-cid="{{ _c || c }}" data-hid="{{ 7 + _t }}" bindtap="_pe">危险按钮</van-button><van-button class="_van-button v-cbda188e">默认按钮</van-button><van-button class="_van-button v-cbda188e" type="warning">警告按钮</van-button><van-button class="_van-button v-cbda188e" type="primary" plain="true">朴素按钮</van-button><van-button class="_van-button v-cbda188e" type="danger" plain="true">朴素按钮</van-button></template>
+
+<template name="default_1" parent="index$75c3f9a1"><van-button class="_van-button v-cbda188e" type="primary" disabled="true">禁用状态</van-button><van-button class="_van-button v-cbda188e" type="danger" disabled="true">禁用状态</van-button><van-button class="_van-button demo-margin-right v-cbda188e" loading="true" type="primary" loading-class="loading"></van-button><van-button class="_van-button v-cbda188e" loading="true" type="danger" loading-class="loading"></van-button><van-button class="_van-button v-cbda188e" type="primary" square="true">方形按钮</van-button><van-button class="_van-button v-cbda188e" type="danger" round="{{ h[ 47 + _t ][ 'round' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 47 + _t }}" bindtap="_pe">圆形按钮</van-button><van-button class="_van-button v-cbda188e" size="large" block="{{ h[ 51 + _t ][ 'block' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 51 + _t }}" bindtap="_pe">大号按钮,点我试试</van-button><van-button class="_van-button v-cbda188e">普通按钮</van-button><van-button class="_van-button v-cbda188e" size="small">小型按钮</van-button><van-button class="_van-button v-cbda188e" size="mini">迷你按钮</van-button></template>
+
+<template name="default_2" parent="index$0304fa5e"><van-cell-group class="_van-cell-group v-a8f7362e"><van-cell class="_van-cell v-a8f7362e" title="单元格" value="内容"></van-cell> <van-cell class="_van-cell v-a8f7362e" title="单元格" value="内容" label="描述信息" border="{{ h[ 8 + _t ][ 'border' ] }}"></van-cell></van-cell-group></template>
+
+<template name="default_3" parent="index$0304fa5e"><van-cell-group class="_van-cell-group v-a8f7362e"><van-cell class="_van-cell v-a8f7362e" title="单元格" value="内容" size="large"></van-cell> <van-cell class="_van-cell v-a8f7362e" title="单元格" value="内容" size="large" label="描述信息"></van-cell></van-cell-group></template>
+
+<template name="default_4" parent="index$0304fa5e"><van-cell-group class="_van-cell-group v-a8f7362e"><van-cell class="_van-cell v-a8f7362e" title="单元格" icon="location"></van-cell></van-cell-group></template>
+
+<template name="default_5" parent="index$0304fa5e"><van-cell-group class="_van-cell-group v-a8f7362e"><van-cell class="_van-cell v-a8f7362e" title="单元格" is-link="true"></van-cell> <van-cell class="_van-cell v-a8f7362e" title="单元格" value="内容" is-link="true"></van-cell> <van-cell class="_van-cell v-a8f7362e" title="单元格" value="内容" is-link="true" arrow-direction="down" url="/pages/button/index"></van-cell></van-cell-group></template>
+
+<template name="default_6" parent="index$a4c818ce"><van-row class="_van-row"><van-col class="_van-col" span="8" custom-class="dark">span: 8</van-col> <van-col class="_van-col" span="8" custom-class="light">span: 8</van-col> <van-col class="_van-col" span="8" custom-class="dark">span: 8</van-col></van-row><van-row class="_van-row"><van-col class="_van-col" span="4" custom-class="dark">span: 4</van-col> <van-col class="_van-col" span="10" offset="4" custom-class="light">offset: 4, span: 10</van-col></van-row><van-row class="_van-row"><van-col class="_van-col" offset="12" span="12" custom-class="dark">offset: 12, span: 12</van-col></van-row></template>
+
+<template name="default_7" parent="index$a4c818ce"><van-row class="_van-row" gutter="20"><van-col class="_van-col" span="8" custom-class="dark">span: 8</van-col> <van-col class="_van-col" span="8" custom-class="light">span: 8</van-col> <van-col class="_van-col" span="8" custom-class="dark">span: 8</van-col></van-row></template>
+
+<template name="default_8" parent="index$ff510488"><van-area class="_van-area" area-list="{{ h[ 3 + _t ][ 'area-list' ] }}"></van-area></template>
+
+<template name="default_9" parent="index$ff510488"><van-area class="_van-area" area-list="{{ h[ 8 + _t ][ 'area-list' ] }}" value="110101"></van-area></template>
+
+<template name="default_10" parent="index$ff510488"><van-area class="_van-area" area-list="{{ h[ 13 + _t ][ 'area-list' ] }}" columns-num="2" title="标题"></van-area></template>
+
+<template name="default_11" parent="index$434bd610"><van-button class="_van-button" data-cid="{{ _c || c }}" data-hid="{{ 3 + _t }}" bindtap="_pe">{{ h[ 5 + _t ].t }}</van-button><van-popup class="_van-popup" position="bottom" show="{{ h[ 7 + _t ][ 'show' ] }}" custom-class="center" data-cid="{{ _c || c }}" data-hid="{{ 7 + _t }}" bindclose="_pe"><van-datetime-picker class="_van-datetime-picker" type="datetime" value="{{ h[ 9 + _t ][ 'value' ] }}" min-date="{{ h[ 9 + _t ][ 'min-date' ] }}" max-date="{{ h[ 9 + _t ][ 'max-date' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 9 + _t }}" bindcancel="_pe" bindconfirm="_pe"></van-datetime-picker></van-popup></template>
+
+<template name="default_12" parent="index$2236a37a"><van-button class="_van-button" data-cid="{{ _c || c }}" data-hid="{{ 3 + _t }}" bindtap="_pe">弹出 Popup</van-button><van-popup class="_van-popup" show="{{ h[ 7 + _t ][ 'show' ] }}" custom-class="center" data-cid="{{ _c || c }}" data-hid="{{ 7 + _t }}" bindclose="_pe">
+      内容
+    </van-popup></template>
+
+<template name="default_13" parent="index$2236a37a"><van-button class="_van-button demo-margin-right" data-cid="{{ _c || c }}" data-hid="{{ 13 + _t }}" bindtap="_pe">底部弹出</van-button><van-popup class="_van-popup" show="{{ h[ 17 + _t ][ 'show' ] }}" position="bottom" custom-class="bottom" data-cid="{{ _c || c }}" data-hid="{{ 17 + _t }}" bindclose="_pe">
+      内容
+    </van-popup><van-button class="_van-button demo-margin-right" data-cid="{{ _c || c }}" data-hid="{{ 21 + _t }}" bindtap="_pe">顶部弹出</van-button><van-popup class="_van-popup" show="{{ h[ 25 + _t ][ 'show' ] }}" position="top" overlay="{{ h[ 25 + _t ][ 'overlay' ] }}" custom-class="top" data-cid="{{ _c || c }}" data-hid="{{ 25 + _t }}" bindclose="_pe">
+      内容
+    </van-popup><van-button class="_van-button" data-cid="{{ _c || c }}" data-hid="{{ 29 + _t }}" bindtap="_pe">右侧弹出</van-button><van-popup class="_van-popup" show="{{ h[ 33 + _t ][ 'show' ] }}" position="right" custom-class="right" data-cid="{{ _c || c }}" data-hid="{{ 33 + _t }}" bindclose="_pe"><van-button class="_van-button demo-margin-right" data-cid="{{ _c || c }}" data-hid="{{ 35 + _t }}" bindtap="_pe">关闭弹层</van-button> <van-button class="_van-button" data-cid="{{ _c || c }}" data-hid="{{ 39 + _t }}" bindtap="_pe">右侧弹出</van-button> <van-popup class="_van-popup" show="{{ h[ 43 + _t ][ 'show' ] }}" position="right" custom-class="right" data-cid="{{ _c || c }}" data-hid="{{ 43 + _t }}" bindclose="_pe"><van-button class="_van-button" data-cid="{{ _c || c }}" data-hid="{{ 45 + _t }}" bindtap="_pe">关闭弹层</van-button></van-popup></van-popup></template>
+
+<template name="default_14" parent="index$6580b272"><van-checkbox class="_van-checkbox" value="{{ h[ 3 + _t ][ 'value' ] }}" data-key="checkbox1" custom-class="demo-checkbox" data-cid="{{ _c || c }}" data-hid="{{ 3 + _t }}" bindchange="_pe">{{ h[ 5 + _t ].t }}</van-checkbox></template>
+
+<template name="default_15" parent="index$6580b272"><van-checkbox-group class="_van-checkbox-group" value="{{ h[ 9 + _t ][ 'value' ] }}" data-key="result" data-cid="{{ _c || c }}" data-hid="{{ 9 + _t }}" bindchange="_pe"><van-checkbox wx:for="{{ h[ 11 + _t ].li }}" wx:key="key" wx:for-item="v" wx:for-index="key" class="_van-checkbox" name="{{ h[ 11 + _t + '-' + (v_i2 !== undefined ? v_i2 : key) ][ 'name' ] }}" custom-class="demo-checkbox">{{ h[ 13 + _t + '-' + (v_i2 !== undefined ? v_i2 : key) ].t }}</van-checkbox></van-checkbox-group>{{ h[ 14 + _t ].t }}</template>
+
+<template name="default_16" parent="index$6580b272"><van-checkbox-group class="_van-checkbox-group" value="{{ h[ 18 + _t ][ 'value' ] }}" data-key="result2" data-cid="{{ _c || c }}" data-hid="{{ 18 + _t }}" bindchange="_pe"><van-cell-group class="_van-cell-group"><van-cell wx:for="{{ h[ 22 + _t ].li }}" wx:key="key" wx:for-item="v" wx:for-index="index" class="_van-cell" title="{{ h[ 22 + _t + '-' + (v_i2 !== undefined ? v_i2 : index) ][ 'title' ] }}" value-class="value-class" clickable="true" data-name="{{ h[ 22 + _t + '-' + (v_i2 !== undefined ? v_i2 : index) ][ 'data-name' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 22 + _t + '-' + (v_i2 !== undefined ? v_i2 : index) }}" bindtap="_pe"><van-checkbox class="_van-checkbox {{ h[ 24 + _t + '-' + (v_i2 !== undefined ? v_i2 : index) ].cl }}" name="{{ h[ 24 + _t + '-' + (v_i2 !== undefined ? v_i2 : index) ][ 'name' ] }}"></van-checkbox></van-cell></van-cell-group>{{ h[ 26 + _t ].t }}</van-checkbox-group></template>
+
+<template name="default_17" parent="index$7580f9ff"><van-card class="_van-card" num="2" price="2.00" desc="描述信息" title="商品标题" thumb="//img.yzcdn.cn/upload_files/2017/07/02/af5b9f44deaeb68000d7e4a711160c53.jpg"></van-card></template>
+
+<template name="default_18" parent="index$7580f9ff"><van-card class="_van-card" num="2" tag="标签" price="2.00" desc="描述信息" title="商品标题" thumb="//img.yzcdn.cn/upload_files/2017/07/02/af5b9f44deaeb68000d7e4a711160c53.jpg"></van-card></template>
+
+<template name="default_19" parent="index$38580384"><van-cell class="_van-cell" title="Fade" is-link="{{ h[ 3 + _t ][ 'is-link' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 3 + _t }}" bindtap="_pe"></van-cell><van-cell class="_van-cell" title="Fade Up" is-link="{{ h[ 6 + _t ][ 'is-link' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 6 + _t }}" bindtap="_pe"></van-cell><van-cell class="_van-cell" title="Fade Down" is-link="{{ h[ 9 + _t ][ 'is-link' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 9 + _t }}" bindtap="_pe"></van-cell><van-cell class="_van-cell" title="Fade Left" is-link="{{ h[ 12 + _t ][ 'is-link' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 12 + _t }}" bindtap="_pe"></van-cell><van-cell class="_van-cell" title="Fade Right" is-link="{{ h[ 15 + _t ][ 'is-link' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 15 + _t }}" bindtap="_pe"></van-cell><van-cell class="_van-cell" title="Slide Up" is-link="{{ h[ 18 + _t ][ 'is-link' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 18 + _t }}" bindtap="_pe"></van-cell><van-cell class="_van-cell" title="Slide Down" is-link="{{ h[ 21 + _t ][ 'is-link' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 21 + _t }}" bindtap="_pe"></van-cell><van-cell class="_van-cell" title="Slide Left" is-link="{{ h[ 24 + _t ][ 'is-link' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 24 + _t }}" bindtap="_pe"></van-cell><van-cell class="_van-cell" title="Slide Right" is-link="{{ h[ 27 + _t ][ 'is-link' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 27 + _t }}" bindtap="_pe"></van-cell><van-transition class="_van-transition" show="{{ h[ 30 + _t ][ 'show' ] }}" name="{{ h[ 30 + _t ][ 'name' ] }}" custom-class="block"></van-transition></template>
+
+<template name="default_93" parent="index$70bd1f66"><van-submit-bar class="_van-submit-bar" custom-class="root-class" price="{{ h[ 3 + _t ][ 'price' ] }}" button-text="提交订单" data-cid="{{ _c || c }}" data-hid="{{ 3 + _t }}" bindsubmit="_pe"></van-submit-bar></template>
+
+<template name="default_94" parent="index$70bd1f66"><van-submit-bar class="_van-submit-bar" custom-class="root-class" disabled="true" price="{{ h[ 8 + _t ][ 'price' ] }}" button-text="提交订单" tip="您的收货地址不支持同城送, 我们已为您推荐快递" data-cid="{{ _c || c }}" data-hid="{{ 8 + _t }}" bindsubmit="_pe"></van-submit-bar></template>
+
+<template name="default_95" parent="index$70bd1f66"><van-submit-bar class="_van-submit-bar" custom-class="root-class" loading="true" price="{{ h[ 13 + _t ][ 'price' ] }}" button-text="提交订单" tip="{{ h[ 13 + _t ][ 'tip' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 13 + _t }}" bindsubmit="_pe"></van-submit-bar></template>
+
+<template name="default_24" parent="index$38d227de"><van-cell-group class="_van-cell-group"><van-field class="_van-field" value="{{ h[ 5 + _t ][ 'value' ] }}" placeholder="请输入用户名" border="{{ h[ 5 + _t ][ 'border' ] }}" clearable="true"></van-field></van-cell-group></template>
+
+<template name="default_25" parent="index$38d227de"><van-cell-group class="_van-cell-group"><van-field class="_van-field" value="{{ h[ 12 + _t ][ 'value' ] }}" label="用户名" placeholder="请输入用户名" icon="question" icon-class="icon" data-cid="{{ _c || c }}" data-hid="{{ 12 + _t }}" bindclickIcon="_pe"></van-field> <van-field class="_van-field" value="{{ h[ 15 + _t ][ 'value' ] }}" type="password" label="密码" placeholder="请输入密码" required="true" border="{{ h[ 15 + _t ][ 'border' ] }}"></van-field></van-cell-group></template>
+
+<template name="default_26" parent="index$38d227de"><van-cell-group class="_van-cell-group"><van-field class="_van-field" value="输入框已禁用" label="用户名" left-icon="contact" disabled="true" border="{{ h[ 22 + _t ][ 'border' ] }}"></van-field></van-cell-group></template>
+
+<template name="default_27" parent="index$38d227de"><van-cell-group class="_van-cell-group"><van-field class="_van-field" value="{{ h[ 29 + _t ][ 'value' ] }}" label="用户名" placeholder="请输入用户名" error="true"></van-field> <van-field class="_van-field" value="{{ h[ 32 + _t ][ 'value' ] }}" label="手机号" placeholder="请输入手机号" error-message="手机号格式错误" border="{{ h[ 32 + _t ][ 'border' ] }}"></van-field></van-cell-group></template>
+
+<template name="default_28" parent="index$38d227de"><van-cell-group class="_van-cell-group"><van-field class="_van-field" value="{{ h[ 39 + _t ][ 'value' ] }}" label="留言" type="textarea" placeholder="请输入留言" rows="1" autosize="true" border="{{ h[ 39 + _t ][ 'border' ] }}"></van-field></van-cell-group></template>
+
+<template name="default_29" parent="index$305af488"><van-goods-action class="_van-goods-action action-wrapper"><van-goods-action-icon class="_van-goods-action-icon" icon="chat" text="客服" data-cid="{{ _c || c }}" data-hid="{{ 5 + _t }}" bindtap="_pe"></van-goods-action-icon> <van-goods-action-icon class="_van-goods-action-icon" icon="cart" text="购物车" data-cid="{{ _c || c }}" data-hid="{{ 8 + _t }}" bindtap="_pe"></van-goods-action-icon> <van-goods-action-button class="_van-goods-action-button" text="加入购物车" type="warning" data-cid="{{ _c || c }}" data-hid="{{ 11 + _t }}" bindtap="_pe"></van-goods-action-button> <van-goods-action-button class="_van-goods-action-button" text="立即购买" data-cid="{{ _c || c }}" data-hid="{{ 14 + _t }}" bindtap="_pe"></van-goods-action-button></van-goods-action></template>
+
+<template name="default_30" parent="index$305af488"><van-goods-action class="_van-goods-action action-wrapper"><van-goods-action-icon class="_van-goods-action-icon" icon="chat" text="客服"></van-goods-action-icon> <van-goods-action-icon class="_van-goods-action-icon" icon="cart" text="购物车" info="5"></van-goods-action-icon> <van-goods-action-icon class="_van-goods-action-icon" icon="shop" text="店铺"></van-goods-action-icon> <van-goods-action-button class="_van-goods-action-button" text="加入购物车" type="warning"></van-goods-action-button> <van-goods-action-button class="_van-goods-action-button" text="立即购买"></van-goods-action-button></van-goods-action></template>
+
+<template name="default_31" parent="index$93ff4b5c"><van-radio-group class="_van-radio-group" value="{{ h[ 3 + _t ][ 'value' ] }}" data-key="radio1" data-cid="{{ _c || c }}" data-hid="{{ 3 + _t }}" bindchange="_pe"><van-radio class="_van-radio" name="1" custom-class="demo-radio">单选框 1</van-radio> <van-radio class="_van-radio" name="2" custom-class="demo-radio">单选框 2</van-radio></van-radio-group>{{ h[ 12 + _t ].t }}</template>
+
+<template name="default_32" parent="index$93ff4b5c"><van-radio-group class="_van-radio-group" disabled="{{ h[ 16 + _t ][ 'disabled' ] }}" value="{{ h[ 16 + _t ][ 'value' ] }}" data-key="radio2" custom-class="demo-radio-group" data-cid="{{ _c || c }}" data-hid="{{ 16 + _t }}" bindchange="_pe"><van-radio class="_van-radio" name="1" custom-class="demo-radio">单选框 1</van-radio> <van-radio class="_van-radio" name="2" custom-class="demo-radio">单选框 2</van-radio></van-radio-group></template>
+
+<template name="default_33" parent="index$93ff4b5c"><van-radio class="_van-radio" name="1" value="1" custom-class="demo-radio" checked-color="#4b0">
+      单选框
+    </van-radio></template>
+
+<template name="default_34" parent="index$93ff4b5c"><van-radio-group class="_van-radio-group" value="{{ h[ 34 + _t ][ 'value' ] }}"><van-cell-group class="_van-cell-group"><van-cell class="_van-cell" title="单选框 1" clickable="true" data-value="1" data-cid="{{ _c || c }}" data-hid="{{ 38 + _t }}" bindtap="_pe"><van-radio class="_van-radio" name="1"></van-radio></van-cell> <van-cell class="_van-cell" title="单选框 2" clickable="true" data-value="2" data-cid="{{ _c || c }}" data-hid="{{ 43 + _t }}" bindtap="_pe"><van-radio class="_van-radio" name="2"></van-radio></van-cell></van-cell-group></van-radio-group>{{ h[ 47 + _t ].t }}</template>
+
+<template name="default_35" parent="index$8437e7e0"><van-slider class="_van-slider" custom-class="slider" value="50" data-cid="{{ _c || c }}" data-hid="{{ 3 + _t }}" bindchange="_pe"></van-slider></template>
+
+<template name="default_36" parent="index$8437e7e0"><van-slider class="_van-slider" custom-class="slider" value="50" min="10" max="90" data-cid="{{ _c || c }}" data-hid="{{ 8 + _t }}" bindchange="_pe"></van-slider></template>
+
+<template name="default_37" parent="index$8437e7e0"><van-slider class="_van-slider" custom-class="slider" value="50" disabled="{{ h[ 13 + _t ][ 'disabled' ] }}"></van-slider></template>
+
+<template name="default_38" parent="index$8437e7e0"><van-slider class="_van-slider" custom-class="slider" value="50" step="10" bar-height="4px" data-cid="{{ _c || c }}" data-hid="{{ 18 + _t }}" bindchange="_pe"></van-slider></template>
+
+<template name="default_39" parent="index$49f38292"><van-notice-bar class="_van-notice-bar" text="{{ h[ 3 + _t ][ 'text' ] }}" left-icon="//img.yzcdn.cn/public_files/2017/8/10/6af5b7168eed548100d9041f07b7c616.png"></van-notice-bar></template>
+
+<template name="default_40" parent="index$49f38292"><van-notice-bar class="_van-notice-bar" scrollable="{{ h[ 8 + _t ][ 'scrollable' ] }}" text="{{ h[ 8 + _t ][ 'text' ] }}"></van-notice-bar></template>
+
+<template name="default_41" parent="index$49f38292"><van-notice-bar class="_van-notice-bar" mode="closeable" text="{{ h[ 13 + _t ][ 'text' ] }}" custom-class="demo-margin-bottom"></van-notice-bar><van-notice-bar class="_van-notice-bar" mode="link" text="{{ h[ 16 + _t ][ 'text' ] }}"></van-notice-bar></template>
+
+<template name="default_42" parent="index$6b11a062"><van-rate class="_van-rate" custom-class="van-rate" data-key="value1" value="{{ h[ 3 + _t ][ 'value' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 3 + _t }}" bindchange="_pe"></van-rate>{{ h[ 5 + _t ].t }}</template>
+
+<template name="default_43" parent="index$6b11a062"><van-rate class="_van-rate" custom-class="van-rate" icon="like" void-icon="like-o" data-key="value2" value="{{ h[ 9 + _t ][ 'value' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 9 + _t }}" bindchange="_pe"></van-rate>{{ h[ 11 + _t ].t }}</template>
+
+<template name="default_44" parent="index$6b11a062"><van-rate class="_van-rate" custom-class="van-rate" data-key="value3" value="{{ h[ 15 + _t ][ 'value' ] }}" size=" 25 " count=" 6 " color="#2ba" void-color="#ceefe8" data-cid="{{ _c || c }}" data-hid="{{ 15 + _t }}" bindchange="_pe"></van-rate>{{ h[ 17 + _t ].t }}</template>
+
+<template name="default_45" parent="index$6b11a062"><van-rate class="_van-rate" custom-class="van-rate" data-key="value4" value="{{ h[ 21 + _t ][ 'value' ] }}" disabled="{{ h[ 21 + _t ][ 'disabled' ] }}"></van-rate>{{ h[ 23 + _t ].t }}</template>
+
+<template name="default_46" parent="index$f183ffba"><van-switch class="_van-switch" checked="{{ h[ 3 + _t ][ 'checked' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 3 + _t }}" bindchange="_pe"></van-switch></template>
+
+<template name="default_47" parent="index$f183ffba"><van-switch class="_van-switch" checked="{{ h[ 8 + _t ][ 'checked' ] }}" disabled="{{ h[ 8 + _t ][ 'disabled' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 8 + _t }}" bindchange="_pe"></van-switch></template>
+
+<template name="default_48" parent="index$f183ffba"><van-switch class="_van-switch" checked="{{ h[ 13 + _t ][ 'checked' ] }}" loading="{{ h[ 13 + _t ][ 'loading' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 13 + _t }}" bindchange="_pe"></van-switch></template>
+
+<template name="default_49" parent="index$f183ffba"><van-switch class="_van-switch" checked="{{ h[ 18 + _t ][ 'checked' ] }}" size="36px" active-color="#4b0" inactive-color="#f44" data-cid="{{ _c || c }}" data-hid="{{ 18 + _t }}" bindchange="_pe"></van-switch></template>
+
+<template name="default_50" parent="index$f183ffba"><van-cell-group class="_van-cell-group"><van-switch-cell class="_van-switch-cell" title="标题" checked="{{ h[ 25 + _t ][ 'checked' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 25 + _t }}" bindchange="_pe"></van-switch-cell></van-cell-group></template>
+
+<template name="default_51" parent="index$f183ffba"><van-cell-group class="_van-cell-group"><van-switch-cell class="_van-switch-cell" disabled="{{ h[ 32 + _t ][ 'disabled' ] }}" title="标题" checked="{{ h[ 32 + _t ][ 'checked' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 32 + _t }}" bindchange="_pe"></van-switch-cell></van-cell-group></template>
+
+<template name="default_52" parent="index$f183ffba"><van-cell-group class="_van-cell-group"><van-switch-cell class="_van-switch-cell" loading="{{ h[ 39 + _t ][ 'loading' ] }}" title="标题" checked="{{ h[ 39 + _t ][ 'checked' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 39 + _t }}" bindchange="_pe"></van-switch-cell></van-cell-group></template>
+
+<template name="default_53" parent="index$bf6cba48"><van-collapse class="_van-collapse" value="{{ h[ 3 + _t ][ 'value' ] }}" data-key="active1" data-cid="{{ _c || c }}" data-hid="{{ 3 + _t }}" bindchange="_pe"><van-collapse-item class="_van-collapse-item" title="{{ h[ 5 + _t ][ 'title' ] }}" content-class="van-collapse-item__content">{{ h[ 7 + _t ].t }}</van-collapse-item> <van-collapse-item class="_van-collapse-item" title="{{ h[ 9 + _t ][ 'title' ] }}" content-class="van-collapse-item__content">{{ h[ 11 + _t ].t }}</van-collapse-item> <van-collapse-item class="_van-collapse-item" title="{{ h[ 13 + _t ][ 'title' ] }}" content-class="van-collapse-item__content" disabled="{{ h[ 13 + _t ][ 'disabled' ] }}">{{ h[ 15 + _t ].t }}</van-collapse-item></van-collapse></template>
+
+<template name="default_54" parent="index$bf6cba48"><van-collapse class="_van-collapse" value="{{ h[ 19 + _t ][ 'value' ] }}" data-key="active2" accordion="{{ h[ 19 + _t ][ 'accordion' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 19 + _t }}" bindchange="_pe"><van-collapse-item class="_van-collapse-item" title="{{ h[ 21 + _t ][ 'title' ] }}" content-class="van-collapse-item__content">{{ h[ 23 + _t ].t }}</van-collapse-item> <van-collapse-item class="_van-collapse-item" title="{{ h[ 25 + _t ][ 'title' ] }}" content-class="van-collapse-item__content">{{ h[ 27 + _t ].t }}</van-collapse-item> <van-collapse-item class="_van-collapse-item" title="{{ h[ 29 + _t ][ 'title' ] }}" content-class="van-collapse-item__content">{{ h[ 31 + _t ].t }}</van-collapse-item></van-collapse></template>
+
+<template name="default_55" parent="index$2cddc0b0"><van-stepper class="_van-stepper" value="{{ h[ 3 + _t ][ 'value' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 3 + _t }}" bindchange="_pe"></van-stepper>{{ h[ 5 + _t ].t }}</template>
+
+<template name="default_56" parent="index$2cddc0b0"><van-stepper class="_van-stepper" value="{{ h[ 9 + _t ][ 'value' ] }}" disabled="{{ h[ 9 + _t ][ 'disabled' ] }}"></van-stepper></template>
+
+<template name="default_57" parent="index$2cddc0b0"><van-stepper class="_van-stepper" value="{{ h[ 14 + _t ][ 'value' ] }}" integer="true" min="5" max="40" step="2" data-cid="{{ _c || c }}" data-hid="{{ 14 + _t }}" bindchange="_pe"></van-stepper>{{ h[ 16 + _t ].t }}</template>
+
+<template name="default_58" parent="index$a943ef04"><van-steps class="_van-steps" steps="{{ h[ 3 + _t ][ 'steps' ] }}" active="{{ h[ 3 + _t ][ 'active' ] }}" custom-class="demo-margin-bottom"></van-steps><van-button class="_van-button" custom-class="demo-margin-left" data-cid="{{ _c || c }}" data-hid="{{ 6 + _t }}" bindtap="_pe">下一步</van-button></template>
+
+<template name="default_59" parent="index$a943ef04"><van-steps class="_van-steps" steps="{{ h[ 12 + _t ][ 'steps' ] }}" active="{{ h[ 12 + _t ][ 'active' ] }}" direction="vertical" active-color="#f44"></van-steps></template>
+
+<template name="default_60" parent="index$5d8b3d48"><van-progress class="_van-progress" custom-class="progress" percentage="50"></van-progress></template>
+
+<template name="default_61" parent="index$5d8b3d48"><van-progress class="_van-progress" custom-class="progress" inactive="true" percentage="50"></van-progress></template>
+
+<template name="default_62" parent="index$5d8b3d48"><van-progress class="_van-progress" custom-class="progress" pivot-text="橙色" color="#f2826a" percentage="25"></van-progress><van-progress class="_van-progress" custom-class="progress" pivot-text="红色" color="#f44" percentage="50"></van-progress><van-progress class="_van-progress" custom-class="progress" percentage="75" pivot-text="紫色" pivot-color="#7232dd" color="linear-gradient(to right, #be99ff, #7232dd)"></van-progress></template>
+
+<template name="default_63" parent="index$2eafa7b1"><van-tag class="_van-tag demo-margin-right">标签</van-tag><van-tag class="_van-tag demo-margin-right" type="danger">标签</van-tag><van-tag class="_van-tag demo-margin-right" type="primary">标签</van-tag><van-tag class="_van-tag" type="success">标签</van-tag></template>
+
+<template name="default_64" parent="index$2eafa7b1"><van-tag class="_van-tag demo-margin-right" plain="true">标签</van-tag><van-tag class="_van-tag demo-margin-right" plain="true" type="danger">标签</van-tag><van-tag class="_van-tag demo-margin-right" plain="true" type="primary">标签</van-tag><van-tag class="_van-tag" plain="true" type="success">标签</van-tag></template>
+
+<template name="default_65" parent="index$2eafa7b1"><van-tag class="_van-tag demo-margin-right" round="true">标签</van-tag><van-tag class="_van-tag demo-margin-right" round="true" type="danger">标签</van-tag><van-tag class="_van-tag demo-margin-right" round="true" type="primary">标签</van-tag><van-tag class="_van-tag" round="true" type="success">标签</van-tag></template>
+
+<template name="default_66" parent="index$2eafa7b1"><van-tag class="_van-tag demo-margin-right" mark="true">标签</van-tag><van-tag class="_van-tag demo-margin-right" mark="true" type="danger">标签</van-tag><van-tag class="_van-tag demo-margin-right" mark="true" type="primary">标签</van-tag><van-tag class="_van-tag" mark="true" type="success">标签</van-tag></template>
+
+<template name="default_67" parent="index$2eafa7b1"><van-tag class="_van-tag demo-margin-right" color="#f2826a">标签</van-tag><van-tag class="_van-tag demo-margin-right" color="#f2826a" plain="true">标签</van-tag><van-tag class="_van-tag demo-margin-right" color="#7232dd">标签</van-tag><van-tag class="_van-tag" color="#7232dd" plain="true">标签</van-tag></template>
+
+<template name="default_68" parent="index$2eafa7b1"><van-tag class="_van-tag demo-margin-right" type="danger">标签</van-tag><van-tag class="_van-tag demo-margin-right" type="danger" size="medium">标签</van-tag><van-tag class="_van-tag" type="danger" size="large">标签</van-tag></template>
+
+<template name="default_69" parent="index$30eeedc0"><van-button class="_van-button" data-cid="{{ _c || c }}" data-hid="{{ 3 + _t }}" bindtap="_pe">弹出 ActionSheet</van-button><van-action-sheet class="_van-action-sheet" show="{{ h[ 7 + _t ][ 'show' ] }}" actions="{{ h[ 7 + _t ][ 'actions' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 7 + _t }}" bindclose="_pe" bindselect="_pe"></van-action-sheet></template>
+
+<template name="default_70" parent="index$30eeedc0"><van-button class="_van-button" data-cid="{{ _c || c }}" data-hid="{{ 12 + _t }}" bindtap="_pe">弹出带取消按钮的 ActionSheet</van-button><van-action-sheet class="_van-action-sheet" show="{{ h[ 16 + _t ][ 'show' ] }}" actions="{{ h[ 16 + _t ][ 'actions' ] }}" cancel-text="取消" data-cid="{{ _c || c }}" data-hid="{{ 16 + _t }}" bindclose="_pe" bindcancel="_pe" bindselect="_pe"></van-action-sheet></template>
+
+<template name="default_71" parent="index$30eeedc0"><van-button class="_van-button" data-cid="{{ _c || c }}" data-hid="{{ 21 + _t }}" bindtap="_pe">弹出带标题的 ActionSheet</van-button><van-action-sheet class="_van-action-sheet" show="{{ h[ 25 + _t ][ 'show' ] }}" title="标题" data-cid="{{ _c || c }}" data-hid="{{ 25 + _t }}" bindclose="_pe"><view class="_view content">内容</view></van-action-sheet></template>
+
+<template name="default_72" parent="index$44550797"><van-search class="_van-search" value="{{ h[ 3 + _t ][ 'value' ] }}" placeholder="请输入搜索关键词" data-cid="{{ _c || c }}" data-hid="{{ 3 + _t }}" bindchange="_pe"></van-search></template>
+
+<template name="default_73" parent="index$44550797"><van-search class="_van-search" value="{{ h[ 8 + _t ][ 'value' ] }}" show-action="true" placeholder="请输入搜索关键词" data-cid="{{ _c || c }}" data-hid="{{ 8 + _t }}" bindchange="_pe" bindsearch="_pe" bindcancel="_pe" bindclear="_pe"></van-search></template>
+
+<template name="default_74" parent="index$751b2889"><van-tree-select class="_van-tree-select" items="{{ h[ 3 + _t ][ 'items' ] }}" main-active-index="{{ h[ 3 + _t ][ 'main-active-index' ] }}" active-id="{{ h[ 3 + _t ][ 'active-id' ] }}" data-cid="{{ _c || c }}" data-hid="{{ 3 + _t }}" bindclickItem="_pe" bindclickNav="_pe"></van-tree-select></template>
+
+<template name="default_75" parent="index$6cb2c45a"><van-loading class="_van-loading" custom-class="loading"></van-loading><van-loading class="_van-loading" custom-class="loading shadow" color="#fff"></van-loading></template>
+
+<template name="default_76" parent="index$6cb2c45a"><van-loading class="_van-loading" custom-class="loading" type="spinner"></van-loading><van-loading class="_van-loading" custom-class="loading shadow" type="spinner" color="#fff"></van-loading></template>
+
+<template name="default_77" parent="index$548c6737"><van-button class="_van-button demo-margin-right" plain="{{ h[ 3 + _t ][ 'plain' ] }}" type="primary" data-cid="{{ _c || c }}" data-hid="{{ 3 + _t }}" bindtap="_pe">
+      消息提示
+    </van-button><van-button class="_van-button" plain="{{ h[ 7 + _t ][ 'plain' ] }}" type="primary" data-cid="{{ _c || c }}" data-hid="{{ 7 + _t }}" bindtap="_pe">
+      无标题提示
+    </van-button></template>
+
+<template name="default_78" parent="index$548c6737"><van-button class="_van-button" plain="{{ h[ 13 + _t ][ 'plain' ] }}" type="primary" data-cid="{{ _c || c }}" data-hid="{{ 13 + _t }}" bindtap="_pe">
+      消息确认
+    </van-button></template>
+
+<template name="default_79" parent="index$d368e904"><van-button class="_van-button demo-margin-right" data-cid="{{ _c || c }}" data-hid="{{ 3 + _t }}" bindtap="_pe">文字提示</van-button><van-button class="_van-button" data-cid="{{ _c || c }}" data-hid="{{ 7 + _t }}" bindtap="_pe">长文字提示</van-button></template>
+
+<template name="default_80" parent="index$d368e904"><van-button class="_van-button" data-cid="{{ _c || c }}" data-hid="{{ 13 + _t }}" bindtap="_pe">加载提示</van-button></template>
+
+<template name="default_81" parent="index$d368e904"><van-button class="_van-button demo-margin-right" data-cid="{{ _c || c }}" data-hid="{{ 19 + _t }}" bindtap="_pe">成功提示</van-button><van-button class="_van-button" data-cid="{{ _c || c }}" data-hid="{{ 23 + _t }}" bindtap="_pe">失败提示</van-button></template>
+
+<template name="default_82" parent="index$d368e904"><van-button class="_van-button" data-cid="{{ _c || c }}" data-hid="{{ 29 + _t }}" bindtap="_pe">高级用法</van-button></template>
+
+<template name="default_83" parent="index$d6768710"><van-button class="_van-button" data-cid="{{ _c || c }}" data-hid="{{ 3 + _t }}" bindtap="_pe">显示消息通知</van-button></template>
+
+<template name="default_84" parent="index$d6768710"><van-button class="_van-button" data-cid="{{ _c || c }}" data-hid="{{ 9 + _t }}" bindtap="_pe">显示自定义消息通知</van-button></template>
+

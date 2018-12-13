@@ -1,0 +1,26 @@
+
+.title.v-5646e35a {
+  margin: 0;
+  font-weight: 400;
+  font-size: 28rpx;
+  color: rgba(69, 90, 100, 0.6);
+  padding: 40rpx 30rpx 30rpx;
+}
+.wrap.v-5646e35a {
+  padding: 20rpx;
+}
+
+.demo-swipe-cell {
+  user-select: none;
+}
+.van-swipe-cell__left,
+.van-swipe-cell__right {
+  display: inline-block;
+  width: 130rpx;
+  height: 88rpx;
+  font-size: 30rpx;
+  line-height: 88rpx;
+  color: #fff;
+  text-align: center;
+  background-color: #f44;
+}
