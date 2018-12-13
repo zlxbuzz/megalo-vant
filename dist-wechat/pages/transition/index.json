@@ -1,7 +1,0 @@
-{
-  "usingComponents": {
-    "van-cell": "/static/vant/cell/index",
-    "van-transition": "/static/vant/transition/index",
-    "van-toast": "/static/vant/toast/index"
-  }
-}

@@ -1,1 +1,0 @@
-<import src="../components/wrap$65dae1c2.wxml"/><import src="../components/slots.wxml"/><template name="index$434bd610"><view class="_div app {{ h[ 0 ].rcl }}"><template is="wrap$65dae1c2" data="{{ ...$root[ cp + 0 ], $root, s_default: 'default_11', _t: _t || '' }}" /> <van-toast class="_van-toast" id="van-toast"></van-toast></view></template>

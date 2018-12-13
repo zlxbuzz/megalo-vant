@@ -1,1 +1,0 @@
-<import src="../components/slots.wxml"/><template name="wrap$65dae1c2"><view class="_div wrap {{ h[ 0 ].rcl }} v-5646e35a"><view wx:if="{{ h[ 1 ]._if }}" class="_div title v-5646e35a">{{ h[ 2 ].t }}</view> <template name="default$85"></template><template is="{{ s_default || 'default$85' }}" data="{{ ...$root[ s ], $root, _t: _t || '', _c: c }}"/></view></template>

@@ -1,7 +1,0 @@
-{
-  "usingComponents": {
-    "van-submit-bar": "/static/vant/submit-bar/index",
-    "van-tag": "/static/vant/tag/index",
-    "van-toast": "/static/vant/toast/index"
-  }
-}
