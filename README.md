@@ -19,13 +19,15 @@ npm run build
 
 ## 一些细节
 
-1. 组件 slot 暂时不能多层嵌套，所以尽量只用一层。
-
-2.组件的属性用 `vue`开发形式来绑定。
-比如
+1. 组件 slot 暂时不能多层嵌套，所以尽量只用一层。 2.组件的属性用 `vue`开发形式来绑定。
+   比如
 
 ```bash
 <button loading>
 改成
 <button :loading="true">
 ```
+
+## 体验
+
+![megalovant](https://github.com/zlxbuzz/megalo-vant/blob/master/yarn.lock)
