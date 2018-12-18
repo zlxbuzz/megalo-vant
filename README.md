@@ -30,4 +30,4 @@ npm run build
 
 ## 体验
 
-![megalovant](https://github.com/zlxbuzz/megalo-vant/blob/master/yarn.lock)
+![megalovant](https://github.com/zlxbuzz/megalo-vant/blob/master/gh_7e7d7ece0a69_258.jpg)
