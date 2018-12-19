@@ -1,12 +1,14 @@
 <template>
   <div class="app">
-    <wrap title="基本用法">
+    {{ value }}
+    <wrap title="基用法">
       <van-cell-group>
         <van-field
           :value="value"
           placeholder="请输入用户名"
           :border="false"
-          clearable
+          :clearable="true"
+          @input="change"
         />
       </van-cell-group>
     </wrap>
@@ -109,6 +111,9 @@ export default {
     };
   },
   methods: {
+    change({detail}) {
+      this.value = detail;
+    },
     onClickIcon() {
       Toast('haha');
     },
